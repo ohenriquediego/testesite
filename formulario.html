@@ -27,6 +27,15 @@
       />
       <button type="submit">Enviar</button>
     </form>
+    <script>
+  document.querySelector('.form').onsubmit = function() {
+    setTimeout(function() {
+      window.location.href = "obrigado.html"; // Altere para a URL da página de sucesso
+    }, 1000); // Aguarda 1 segundo para garantir que o formulário seja enviado
+  };
+</script>
+
   </body>
 
 </html>
+
