@@ -9,11 +9,11 @@
   </head>
   <body>
     <h1>Formulário de Contato</h1>
-    <form
-      action="https://formsubmit.co/grupocasavelha1@gmail.com"
-      method="POST"
-      class="form"
-    >
+  <form action="https://formsubmit.co/grupocasavelha1@gmail.com" method="POST">
+     <input type="text" name="name" required>
+     <input type="email" name="email" required>
+     <button type="submit">Send</button>
+</form>
       <label for="name">Nome</label>
       <input type="text" name="name" id="name" required />
       <label for="email">E-mail</label>
@@ -52,6 +52,7 @@ document.querySelector('.form').onsubmit = function (e) {
   </body>
 
 </html>
+
 
 
 
