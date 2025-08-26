@@ -28,14 +28,29 @@
       <button type="submit">Enviar</button>
     </form>
     <script>
-  document.querySelector('.form').onsubmit = function() {
-    setTimeout(function() {
-      window.location.href = "obrigado.html"; // Altere para a URL da página de sucesso
-    }, 1000); // Aguarda 1 segundo para garantir que o formulário seja enviado
-  };
+document.querySelector('.form').onsubmit = function (e) {
+  e.preventDefault(); // Impede o envio imediato
+
+  fetch(this.action, {
+    method: this.method,
+    body: new FormData(this),
+  })
+  .then(response => {
+    if (response.ok) {
+      window.location.href = "obrigado.html"; // Redireciona após sucesso
+    } else {
+      alert("Houve um erro. Tente novamente.");
+    }
+  })
+  .catch(error => {
+    alert("Erro de rede. Tente novamente.");
+  });
+};
 </script>
+
 
   </body>
 
 </html>
+
 
