@@ -9,11 +9,11 @@
   </head>
   <body>
     <h1>Formulário de Contato</h1>
-  <form action="https://formsubmit.co/grupocasavelha1@gmail.com" method="POST">
-     <input type="text" name="name" required>
-     <input type="email" name="email" required>
-     <button type="submit">Send</button>
-</form>
+    <form
+      action="https://formsubmit.co/grupocasavelha1@gmail.com"
+      method="POST"
+      class="form"
+    >
       <label for="name">Nome</label>
       <input type="text" name="name" id="name" required />
       <label for="email">E-mail</label>
@@ -24,35 +24,9 @@
       <input
         type="hidden"
         name="_next"
+        value="https://yourdomain.co/thanks.html"
       />
       <button type="submit">Enviar</button>
     </form>
-    <script>
-document.querySelector('.form').onsubmit = function (e) {
-  e.preventDefault(); // Impede o envio imediato
-
-  fetch(this.action, {
-    method: this.method,
-    body: new FormData(this),
-  })
-  .then(response => {
-    if (response.ok) {
-      window.location.href = "obrigado.html"; // Redireciona após sucesso
-    } else {
-      alert("Houve um erro. Tente novamente.");
-    }
-  })
-  .catch(error => {
-    alert("Erro de rede. Tente novamente.");
-  });
-};
-</script>
-
-
   </body>
-
 </html>
-
-
-
-
