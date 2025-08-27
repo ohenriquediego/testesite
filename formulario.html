@@ -10,28 +10,26 @@
   <body>
     <h1>Formulário de Contato</h1>
     <form
-      action="https://formsubmit.co/grupocasavelha1@gmail.com"]
-      <input type="hidden" name="_captcha" value="false" />
+      action="https://formsubmit.co/grupocasavelha1@gmail.com"
       method="POST"
       class="form"
     >
+      <!-- Desativar reCAPTCHA -->
+      <input type="hidden" name="_captcha" value="false" />
+
+      <!-- Redirecionamento após envio -->
+      <input type="hidden" name="_next" value="https://ohenriquediego.github.io/testesite/obrigado.html" />
+
       <label for="name">Nome</label>
       <input type="text" name="name" id="name" required />
+
       <label for="email">E-mail</label>
       <input type="email" name="email" id="email" required />
+
       <label for="message">Mensagem</label>
       <textarea name="message" id="message" required></textarea>
-      <input
-       <input type="hidden" name="_next" value="https://ohenriquediego.github.io/testesite/obrigado.html" />
-      />
+
       <button type="submit">Enviar</button>
     </form>
   </body>
 </html>
-
-
-
-
-
-
-
