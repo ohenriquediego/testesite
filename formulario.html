@@ -1,35 +1,27 @@
-<!DOCTYPE html>
+=<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulário de Contato</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>Formulário de Contato</h1>
-    <form
-      action="https://formsubmit.co/grupocasavelha1@gmail.com"
-      method="POST"
-      class="form"
-    >
-      <!-- Desativar reCAPTCHA -->
-      <input type="hidden" name="_captcha" value="false" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulariostyle.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <section>
+        <h2>Contato</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+            <label>Mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
 
-      <!-- Redirecionamento após envio -->
-      <input type="hidden" name="_next" value="https://ohenriquediego.github.io/testesite/obrigado.html" />
-
-      <label for="name">Nome</label>
-      <input type="text" name="name" id="name" required />
-
-      <label for="email">E-mail</label>
-      <input type="email" name="email" id="email" required />
-
-      <label for="message">Mensagem</label>
-      <textarea name="message" id="message" required></textarea>
-
-      <button type="submit">Enviar</button>
-    </form>
-  </body>
+            <input type="hidden" name="accessKey" value="042be0d3-84fa-4ae8-aaed-2434cda72cac">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/obrigado.html">
+        </form>
+    </section>
+</body>
 </html>
