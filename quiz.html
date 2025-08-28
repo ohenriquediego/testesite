@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Casa Velha</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz - Casa Velha</h1>
+
+        <div class="question">
+            <p>1. Quem é o autor de "Casa Velha"?</p>
+            <label><input type="radio" name="q1" value="a"> José de Alencar</label><br>
+            <label><input type="radio" name="q1" value="b"> Machado de Assis</label><br>
+            <label><input type="radio" name="q1" value="c"> Lima Barreto</label>
+        </div>
+
+        <div class="question">
+            <p>2. "Casa Velha" se passa em qual cidade?</p>
+            <label><input type="radio" name="q2" value="a"> Salvador</label><br>
+            <label><input type="radio" name="q2" value="b"> Rio de Janeiro</label><br>
+            <label><input type="radio" name="q2" value="c"> São Paulo</label>
+        </div>
+
+        <button onclick="verificarRespostas()">Enviar Respostas</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
