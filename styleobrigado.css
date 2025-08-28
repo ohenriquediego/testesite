@@ -15,7 +15,7 @@ body {
   text-align: center;
 
   /* Imagem de fundo */
-  background: url('fundo.jpg') no-repeat center center/cover;
+  background: url('fundo-obrigado.jpg') no-repeat center center/cover;
 }
 
 .container {
@@ -43,7 +43,7 @@ h2 {
   color: white;
   text-decoration: none;
   border-radius: 50px;
-  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  background: linear-gradient(135deg, #ff6cab, #7366ff);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
@@ -51,10 +51,10 @@ h2 {
 .btn-voltar:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
-  background: linear-gradient(135deg, #00f2fe, #4facfe);
+  background: linear-gradient(135deg, #7366ff, #ff6cab);
 }
 
-/* Animação */
+/* Animação de entrada suave */
 @keyframes fadeIn {
   from {
     opacity: 0;
